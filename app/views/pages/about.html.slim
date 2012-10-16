@@ -5,26 +5,16 @@
       1Life is a group of young single professionals who aims to develop and
       help college students achieve their true potential and find their
       life's mission and vision during their stay in the academe.
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
+  - %w[pup ccf rrc].each do |photo|
+    .span2
+      a.thumbnail.fancybox href=image_path("about/who/#{photo}.jpg") rel="who"
+        img.img-rounded src=image_path("about/who/#{photo}-small.jpg")
 
 .row-fluid
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
+  - 1.upto(3) do |n|
+    .span2
+      a.thumbnail.fancybox href=image_path("about/mission/mission#{n}.jpg") rel="mission"
+        img.img-rounded src=image_path("about/mission/mission#{n}-small.jpg")
   .span6
     h2 Our Mission
     | 1Life's mission is to reach out to the college students and channel them

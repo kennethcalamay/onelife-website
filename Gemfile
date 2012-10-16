@@ -9,5 +9,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'asset_sync'
 gem 'slim'
 gem 'slim-rails'

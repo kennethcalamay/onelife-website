@@ -1,23 +1,9 @@
 h2 iInspire
 .row
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iInspire"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iInspire"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iInspire"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iInspire"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iInspire"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iInspire"
-      img.img-circle src="http://placehold.it/202"
+  - %w[talent_portion intermission speaker presentation crowd breakout].each do |photo|
+    .span2
+      a.thumbnail.fancybox href=image_path("photos/iInspire/#{photo}.jpg") rel="iInspire"
+        img.img-circle src=image_path("photos/iInspire/#{photo}-small.jpg")
 
 h3 iAchieve
 .row

@@ -1,0 +1,53 @@
+= render 'flash'
+
+h2 How You Can Reach Us
+p If you have any questions, comments, suggestions, or if you want to know more about 1Life, you may contact us by doing one of two things:
+.row-fluid style="background: rgba(0,0,0,0.1);"
+  .span6
+    = form_for @contact_form, :html => {:class => "form-horizontal"} do |f|
+      fieldset
+        legend 1. Fill up this form
+        div.control-group
+          = f.label :name, :class => 'control-label'
+          div.controls
+            = f.text_field :name, :class => 'input-xlarge'
+            /p.help-block Please enter your full name.
+        div.control-group
+          = f.label :email, :class => 'control-label'
+          div.controls
+            = f.email_field :email, :class => 'input-xlarge'
+            /p.help-block We need your email address to get back at you.
+        div.control-group
+          = f.label :subject, :class => 'control-label'
+          div.controls
+            = f.text_field :subject, :class => 'input-xlarge'
+            /p.help-block Please summarize what your message is about.
+        div.control-group
+          = f.label :message, :class => 'control-label'
+          div.controls
+            = f.text_area :message, :class => 'input-xlarge', :rows => 5
+        div.control-group
+          div.controls
+            button type="submit" class="btn" Deliver
+
+
+  .span6
+    form.form-horizontal
+      fieldset
+        legend 2. Or contact us through:
+        div.control-group
+          label.control-label Mobile
+          div.controls
+            input.input-xlarge.uneditable-input type="text" value="0917.534.3990" disabled="true"
+        div.control-group
+          label.control-label Email
+          div.controls
+            input.input-xlarge.uneditable-input type="email" value="livemoveexist@yahoo.com.ph" disabled="true"
+        div.control-group
+          label.control-label Facebook
+          div.controls
+            input.input-xlarge.uneditable-input type="email" value="facebook.com/LiveMoveExist" disabled="true"
+        div.control-group
+          label.control-label Twitter
+          div.controls
+            input.input-xlarge.uneditable-input type="email" value="twitter.com/LiveMoveExist" disabled="true"

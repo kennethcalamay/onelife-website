@@ -36,17 +36,16 @@
               <span class="icon-bar">
               </span>
             </a>
-            <a class="brand" href="#">
+            <a class="brand" href="/" style="<%= current_page?(root_path) ? 'color:white;' : nil %>">
               Coming soon at CCP!
             </a>
             <div class="nav-collapse">
               <ul class="nav">
-                <li><a href="/home">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Photos</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Donate</a></li>
+                <li class="<%= current_page?(about_path) ? 'active' : nil %>"><%= link_to "About", about_path %></li>
+                <li class="<%= current_page?(photos_path) ? 'active' : nil %>"><%= link_to "Photos", photos_path %></li>
+                <li class="<%= current_page?(videos_path) ? 'active' : nil %>"><%= link_to "Videos", videos_path %></li>
+                <li class="<%= current_page?(contact_us_path) ? 'active' : nil %>"><%= link_to "Contact Us", contact_us_path %></li>
+                <li class="<%= current_page?(donate_path) ? 'active' : nil %>"><%= link_to "Donate", donate_path %></li>
               </ul>
             </div>
           </div>

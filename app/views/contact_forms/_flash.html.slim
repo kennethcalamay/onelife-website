@@ -13,7 +13,7 @@
     button.close type="button" data-dismiss="alert" x
     h4
       = pluralize(@contact_form.errors.count, 'error') 
-      '  prevents this form from being submitted:
+      '  prevented this form from being submitted:
     - @contact_form.errors.full_messages.each_with_index do |msg, index|
       = "#{index+1}. #{msg}"
       br

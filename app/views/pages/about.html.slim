@@ -27,26 +27,16 @@
     | 1Life envisions to see a growing movement of college students being
       transformed by Christ, living the life of Christ and influencing their
       family, school, and community for Christ.
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
+  - %w[groupshot crowdshot breakout].each do |photo|
+    .span2
+      a.thumbnail.fancybox href=image_path("about/vision/#{photo}.jpg") rel="vision"
+        img.img-rounded src=image_path("about/vision/#{photo}-small.jpg")
 
 .row-fluid
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="who"
-      img.img-circle src="http://placehold.it/202"
+  - 3.times do
+    .span2
+      a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="passion"
+        img.img-rounded src="http://placehold.it/202"
   .span6
     h2 Our Passion
     |

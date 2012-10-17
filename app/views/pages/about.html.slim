@@ -33,10 +33,10 @@
         img.img-rounded src=image_path("about/vision/#{photo}-small.jpg")
 
 .row-fluid
-  - 3.times do
+  - 1.upto(3) do |n|
     .span2
-      a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="passion"
-        img.img-rounded src="http://placehold.it/202"
+      a.thumbnail.fancybox href=image_path("about/passion/#{n}.jpg") rel="passion"
+        img.img-rounded src=image_path("about/passion/#{n}-small.jpg")
   .span6
     h2 Our Passion
     |

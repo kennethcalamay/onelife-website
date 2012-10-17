@@ -7,13 +7,13 @@
       life's mission and vision during their stay in the academe.
   - %w[pup ccf rrc].each do |photo|
     .span2
-      a.thumbnail.fancybox href=image_path("about/who/#{photo}.jpg") rel="who"
+      a.thumbnail.fancybox href=image_path("about/who/#{photo}.jpg") rel="gallery"
         img.img-rounded src=image_path("about/who/#{photo}-small.jpg")
 
 .row-fluid
   - 1.upto(3) do |n|
     .span2
-      a.thumbnail.fancybox href=image_path("about/mission/mission#{n}.jpg") rel="mission"
+      a.thumbnail.fancybox href=image_path("about/mission/mission#{n}.jpg") rel="gallery"
         img.img-rounded src=image_path("about/mission/mission#{n}-small.jpg")
   .span6
     h2 Our Mission
@@ -29,13 +29,13 @@
       family, school, and community for Christ.
   - %w[groupshot crowdshot breakout].each do |photo|
     .span2
-      a.thumbnail.fancybox href=image_path("about/vision/#{photo}.jpg") rel="vision"
+      a.thumbnail.fancybox href=image_path("about/vision/#{photo}.jpg") rel="gallery"
         img.img-rounded src=image_path("about/vision/#{photo}-small.jpg")
 
 .row-fluid
   - 1.upto(3) do |n|
     .span2
-      a.thumbnail.fancybox href=image_path("about/passion/#{n}.jpg") rel="passion"
+      a.thumbnail.fancybox href=image_path("about/passion/#{n}.jpg") rel="gallery"
         img.img-rounded src=image_path("about/passion/#{n}-small.jpg")
   .span6
     h2 Our Passion

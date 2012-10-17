@@ -1,30 +1,16 @@
 h2 iInspire
 .row
   - %w[talent_portion intermission speaker presentation crowd breakout].each do |photo|
-    .span2
-      a.thumbnail.fancybox href=image_path("photos/iInspire/#{photo}.jpg") rel="iInspire"
+    .span2 style="background: rgba(0,0,0,0.1);"
+      a.thumbnail.fancybox href=image_path("photos/iInspire/#{photo}.jpg") rel="gallery"
         img.img-circle src=image_path("photos/iInspire/#{photo}-small.jpg")
 
 h3 iAchieve
 .row
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iAchieve"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iAchieve"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iAchieve"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iAchieve"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iAchieve"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="iAchieve"
-      img.img-circle src="http://placehold.it/202"
+  - %w[intermission1 intermission2 speaker speaker-presentation crowd breakout].each do |photo|
+    .span2 style="background: rgba(0,0,0,0.1);"
+      a.thumbnail.fancybox href=image_path("photos/iAchieve/#{photo}.jpg") rel="gallery"
+        img.img-circle src=image_path("photos/iAchieve/#{photo}-small.jpg")
 
 h3 iBelong
 .row

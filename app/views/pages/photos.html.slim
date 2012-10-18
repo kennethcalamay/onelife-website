@@ -12,53 +12,23 @@ h3 iAchieve
       a.thumbnail.fancybox href=image_path("photos/iAchieve/#{photo}.jpg") rel="gallery"
         img.img-circle src=image_path("photos/iAchieve/#{photo}-small.jpg")
 
-h3 iBelong
-.row
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
-
-h3 iLove
-.row
-  .span2
-    a.fancybox href="http://placehold.it/630x480" rel="iLove"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.fancybox href="http://placehold.it/630x480" rel="iLove"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.fancybox href="http://placehold.it/630x480" rel="iLove"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.fancybox href="http://placehold.it/630x480" rel="iLove"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.fancybox href="http://placehold.it/630x480" rel="iLove"
-      img.img-circle src="http://placehold.it/202"
-  .span2
-    a.fancybox href="http://placehold.it/630x480" rel="gallery"
-      img.img-circle src="http://placehold.it/202"
-
 h3 iSucceed
 .row
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
-  .span2
-    img.img-circle src="http://placehold.it/202"
+  - %w[intermission games speaker crowd food band].each do |photo|
+    .span2 style="background: rgba(0,0,0,0.1);"
+      a.thumbnail.fancybox href=image_path("photos/iSucceed/#{photo}.jpg") rel="gallery"
+        img.img-circle src=image_path("photos/iSucceed/#{photo}-small.jpg")
+
+h3 iBelong
+.row
+  - 6.times do
+    .span2
+      a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="gallery"
+        img.img-circle src="http://placehold.it/202"
+  
+h3 iLove
+.row
+  - 6.times do
+    .span2
+      a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="gallery"
+        img.img-circle src="http://placehold.it/202"

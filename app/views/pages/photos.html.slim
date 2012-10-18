@@ -12,23 +12,23 @@ h3 iAchieve
       a.thumbnail.fancybox href=image_path("photos/iAchieve/#{photo}.jpg") rel="gallery"
         img.img-circle src=image_path("photos/iAchieve/#{photo}-small.jpg")
 
+h3 iBelong
+.row
+  - %w[crowd intermission speaker1 speaker2 breakout1 breakout2].each do |photo|
+    .span2
+      a.thumbnail.fancybox href=image_path("photos/iBelong/#{photo}.jpg") rel="gallery"
+        img.img-circle src=image_path("photos/iBelong/#{photo}-small.jpg")
+  
+h3 iLove
+.row
+  - %w[crowd hot-seat husband wife purity speakers].each do |photo|
+    .span2 style="background: rgba(0,0,0,0.1);"
+      a.thumbnail.fancybox href=image_path("photos/iLove/#{photo}.jpg") rel="gallery"
+        img.img-circle src=image_path("photos/iLove/#{photo}-small.jpg")
+
 h3 iSucceed
 .row
   - %w[intermission games speaker crowd food band].each do |photo|
     .span2 style="background: rgba(0,0,0,0.1);"
       a.thumbnail.fancybox href=image_path("photos/iSucceed/#{photo}.jpg") rel="gallery"
         img.img-circle src=image_path("photos/iSucceed/#{photo}-small.jpg")
-
-h3 iBelong
-.row
-  - 6.times do
-    .span2
-      a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="gallery"
-        img.img-circle src="http://placehold.it/202"
-  
-h3 iLove
-.row
-  - 6.times do
-    .span2
-      a.thumbnail.fancybox href=image_path("photos/640x480.gif") rel="gallery"
-        img.img-circle src="http://placehold.it/202"

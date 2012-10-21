@@ -22,6 +22,12 @@ class ContactForm < MailForm::Base
   validates :name, :email, :subject, :message, :presence => true
 
   def headers
-    { :to => "onelife@kennethcalamay.com", :subject => self.subject, :from => self.email, :body => self.message }
+    {
+      :to => "\"1Life Contact Form\" <onelife@kennethcalamay.com>",
+      :cc => ["\"Sammy\" <jowenaolivete03@gmail.com>", "\"Selle\" <smartinez@eperformax.com>", "\"Selle\" <prosellemartinez@hotmail.com>", "\"Vladi\" <paulvlady@yahoo.com>", "\"Vladi\" <vladimer.dungo@unilever.com>"],
+      :subject => self.subject,
+      :from => "\"#{self.name}\" <#{self.email}>",
+      :body => self.message
+    }
   end
 end
